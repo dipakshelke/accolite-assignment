@@ -1,0 +1,198 @@
+.App {
+  text-align: center;
+}
+
+.App-header {
+  background-color: rgb(20, 110, 182);
+  height: 70px;
+  padding: 20px;
+  color: white;
+}
+
+.App-title {
+  font-size: 1.5em;
+}
+
+.App-intro {
+  font-size: large;
+}
+
+.logo-white {
+  filter: invert(100%);
+}
+
+/* Modal */
+/* Modal Overlay */
+.ReactModal__Overlay {
+  background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent dark background */
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+/* Modal Content */
+.modal {
+  background-color: #fff;
+  border-radius: 8px;
+  padding: 20px;
+  width: 90%;
+  max-width: 500px; /* Limiting maximum width */
+  box-sizing: border-box;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease-out;
+  transform: translateY(30px); /* Starting position for animation */
+}
+
+.modal.ReactModal__Content--after-open {
+  transform: translateY(0); /* Final position after modal opens */
+}
+
+.modal h2 {
+  margin-top: 0;
+  font-size: 24px;
+  font-weight: 600;
+}
+
+.modal input {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px;
+}
+
+/* Modal Buttons */
+.modal button {
+  padding: 8px 16px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.2s ease;
+  margin: 5px 5px;
+}
+
+.modal button:hover {
+  background-color: #0056b3;
+}
+
+.modal button:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+
+.modal button.cancel {
+  background-color: #e0dbda; /* Red background for cancel buttons */
+}
+
+.modal button.cancel:hover {
+  background-color: #bdb5b5;
+}
+
+/* Add User Button */
+.add-user-btn {
+  padding: 10px 20px;
+  background-color: #28a745;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  margin-top: 10px;
+}
+
+.add-user-btn:hover {
+  background-color: #218838;
+}
+
+/* Edit and Delete Button Styling */
+.edit-btn,
+.delete-btn {
+  padding: 8px 12px;
+  font-size: 14px;
+  border-radius: 4px;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+  margin: 5px;
+  width: auto;
+}
+
+.delete-btn {
+  background-color: #ff887f; /* Red for delete */
+  color: white;
+}
+
+.delete-btn:hover {
+  background-color: #fa9e9e;
+}
+
+/* Table Styles */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+table th,
+table td {
+  padding: 12px;
+  text-align: left;
+  border: 1px solid #ddd;
+}
+
+table th {
+  background-color: #f4f4f4;
+  font-weight: bold;
+}
+
+table tr:hover {
+  background-color: #f1f1f1;
+}
+
+/* Ensuring consistency across action buttons in the table */
+.action-btns {
+  display: flex;
+  justify-content: flex-start;
+  gap: 10px;
+}
+
+/* Button in table row with spacing */
+.table-btn {
+  padding: 8px 16px;
+  border-radius: 4px;
+  border: none;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.delete,
+.table-btn.delete {
+  background-color: #f44336;
+  color: white;
+}
+
+.table-btn:hover {
+  opacity: 0.8;
+}
+
+.table-btn.edit:hover {
+  background-color: #1aa9fc;
+}
+
+.table-btn.delete:hover {
+  background-color: #d32f2f;
+}
+
+.close-button {
+  background-color: rgb(158, 154, 154) !important;
+}
